@@ -10,8 +10,8 @@ export class AppComponent {
 
   currency = "$";
 
-  loaderShowed = true;
-  loader = true;
+  // loaderShowed = true;
+  // loader = true;
 
   orderImageStyle: any;
   mainImageStyle: any;
@@ -191,15 +191,14 @@ export class AppComponent {
     this.mainImageStyle = {transform: 'translate(-' + ((e.clientX * 0.3) / 8) + 'px, -' + ((e.clientY * 0.3) / 8) + 'px)'};
   }
 
-  ngOnInit(){
-    setTimeout(() => {
-      this.loaderShowed =  false;
-    }, 3000);
-    setTimeout(() => {
-      this.loaderShowed =  false;
-    }, 4000);
-    // this.appService.getData().subscribe( data => this.productsData = data);
-  }
+  // ngOnInit(){
+  //   setTimeout(() => {
+  //     this.loaderShowed =  false;
+  //   }, 3000);
+  //   setTimeout(() => {
+  //     this.loaderShowed =  false;
+  //   }, 4000);
+  // }
 
   scrollTo(target: HTMLElement, burger?: any) {
     target.scrollIntoView({behavior: "smooth"});
